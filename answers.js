@@ -44,3 +44,26 @@ for (i = 0; i <= 200; i++) {
     console.log(i);
   }
 }
+
+//* Wild Wild Life
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"];
+const sharky = ["Sharky", "shark", 20, "Left Coast"];
+const plantee = ["Plantee", "plant", 5000, "Mordor"];
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
+const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"];
+
+//? add 1 year to plantee
+plantee[2] += 1;
+console.log(plantee[2]);
+
+//? change wolfy's hometown to Gotham City
+wolfy[3] = "Gotham City";
+console.log(wolfy[3]);
+
+//? dart: add "Hawkins"
+dart.push("Hawkins");
+console.log(dart[4]);
+
+//? replace wolfy with gameboy
+wolfy[0] = "Gameboy";
+console.log(wolfy[0]);
