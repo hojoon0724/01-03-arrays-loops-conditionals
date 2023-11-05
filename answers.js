@@ -67,3 +67,9 @@ console.log(dart[4]);
 //? replace wolfy with gameboy
 wolfy[0] = "Gameboy";
 console.log(wolfy[0]);
+
+//* Yess at the ninja turtles
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (let name of ninjaTurtles) {
+  console.log(name.toUpperCase());
+}
