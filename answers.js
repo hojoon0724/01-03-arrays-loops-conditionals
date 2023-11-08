@@ -152,3 +152,24 @@ console.log(favMovies[-1]); // Just seeing what happens if I look for "-1" in th
 
 //? Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let?
 // We could have used "let" and it would have worked just fine because we did not redefine "favMovies". BUT it's just safer to use "const". We were able to change the contents because the "const" refers to the entire array, not the individual items inside the array.
+
+// -----------------------------------------------------
+// Where is Waldo
+// -----------------------------------------------------
+
+const whereIsWaldo = [
+  ["Timmy", "Frank"],
+  "Eggbert",
+  ["Lucinda", "Jacc", "Neff", "Snoop"],
+  ["Petunia", ["Baked Goods", "Waldo"]],
+];
+
+//? Remove Eggbert (hint look at the slice/splice method(s))
+const eggbertArrayIndex = whereIsWaldo.indexOf("Eggbert");
+console.log(eggbertArrayIndex);
+whereIsWaldo.splice(eggbertArrayIndex, eggbertArrayIndex);
+console.log(whereIsWaldo);
+
+//? Change "Neff" to "No One"
+const neff = whereIsWaldo.indexOf("Neff");
+console.log(neff);
