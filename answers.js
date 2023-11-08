@@ -226,3 +226,39 @@ if (nums.length % 2 != 0) {
   // console.log("higher", higher);
   console.log("even", (lower + higher) / 2);
 }
+
+// -----------------------------------------------------
+// Lab Revisited
+// -----------------------------------------------------
+//? Fibonacci
+
+const fibonacci = [1, 1];
+let allSum = 0;
+for (i = 0; ; i++) {
+  if (fibonacci[fibonacci.length - 1] < 4000000) {
+    console.log("iteration", i, fibonacci[i]);
+    let nextNumber = fibonacci[i] + fibonacci[i + 1];
+    fibonacci.push(nextNumber);
+    if (nextNumber % 2 == 0) {
+      allSum += nextNumber;
+    }
+  } else {
+    console.log("break");
+    break;
+  }
+}
+console.log(fibonacci);
+console.log(allSum);
+
+// const fibonacciEven = [];
+// let allSum = 0;
+// for (i = 0; i < fibonacci.length; i++) {
+//   if (fibonacci[i] % 2 == 0) {
+//     //console.log("even", fibonacci[i], "iteration", i);
+//     let nextNumber = fibonacci[i];
+//     fibonacciEven.push(nextNumber);
+//     allSum += nextNumber;
+//     console.log(allSum);
+//     // console.log(fibonacciEven);
+//   }
+// }
