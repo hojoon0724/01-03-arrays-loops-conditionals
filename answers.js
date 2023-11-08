@@ -174,3 +174,25 @@ console.log(whereIsWaldo);
 whereIsWaldo[1][2] = "No One";
 console.log(whereIsWaldo[1][2]);
 console.log(whereIsWaldo[2][1][1]);
+
+// -----------------------------------------------------
+// Excited Kitten
+// -----------------------------------------------------
+
+const kittenMessage = "Love me, pet me! HSSSSSS!";
+console.log("test", kittenMessage);
+
+for (i = 1; i <= 20; i++) {
+  // if odd, just message
+  if (i % 2 != 0) {
+    console.log("iteration", i, kittenMessage);
+  } else {
+    const kittenMessageAlt = [
+      "...human...why you taking pictures of me?...",
+      "...the catnip made me do it...",
+      "...why does the red dot always get away...",
+    ];
+    const r = Math.floor(Math.random() * 3);
+    console.log("iteration", i, kittenMessageAlt[r]);
+  }
+}
