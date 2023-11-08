@@ -179,20 +179,50 @@ console.log(whereIsWaldo[2][1][1]);
 // Excited Kitten
 // -----------------------------------------------------
 
-const kittenMessage = "Love me, pet me! HSSSSSS!";
-console.log("test", kittenMessage);
+//console.log("test", kittenMessage);
 
+const kittenMessage = "Love me, pet me! HSSSSSS!";
 for (i = 1; i <= 20; i++) {
   // if odd, just message
   if (i % 2 != 0) {
     console.log("iteration", i, kittenMessage);
-  } else {
+  }
+  // if even, alt message
+  else {
+    // array of messages
     const kittenMessageAlt = [
       "...human...why you taking pictures of me?...",
       "...the catnip made me do it...",
       "...why does the red dot always get away...",
     ];
-    const r = Math.floor(Math.random() * 3);
+    // generate random number below array.length
+    const r = Math.floor(Math.random() * kittenMessageAlt.length);
     console.log("iteration", i, kittenMessageAlt[r]);
   }
+}
+
+// -----------------------------------------------------
+// Find the Median
+// -----------------------------------------------------
+//? Find the median number in the following nums array, then console.log that number.
+const nums = [
+  14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12,
+  17, 12, 71, 18, 15, 12,
+];
+
+// reorder array
+nums.sort();
+
+// if there are odd number of items
+if (nums.length % 2 != 0) {
+  // console.log("array count odd", nums.length);
+  console.log("odd", nums[(nums.length - 1) / 2]);
+  //if there are even number of items, add the middle 2 and average
+} else {
+  // console.log("array count even", nums.length);
+  const lower = nums[nums.length / 2 - 1];
+  const higher = nums[nums.length / 2];
+  // console.log("lower", lower);
+  // console.log("higher", higher);
+  console.log("even", (lower + higher) / 2);
 }
