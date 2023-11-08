@@ -171,5 +171,6 @@ whereIsWaldo.splice(eggbertArrayIndex, eggbertArrayIndex);
 console.log(whereIsWaldo);
 
 //? Change "Neff" to "No One"
-const neff = whereIsWaldo.indexOf("Neff");
-console.log(neff);
+whereIsWaldo[1][2] = "No One";
+console.log(whereIsWaldo[1][2]);
+console.log(whereIsWaldo[2][1][1]);
